@@ -1,0 +1,91 @@
+/*-----------|Mobile|----------------*/
+* {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding: 0 40px;
+}
+
+h1 {
+    margin: 40px 0;
+    text-align: center;
+}
+
+section {
+    background-color: darkgrey;
+    border: 2px solid #000;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+section h3 {
+    border: 2px solid #000;
+    position: relative;
+    float: right;
+    letter-spacing: .1rem;
+    padding: 3px 0;
+    right: -2px;
+    text-align: center;
+    top: -2px;
+    width: 140px;
+}
+
+section p {
+    clear: right;
+    padding: 10px
+}
+
+.chicken {
+    background-color: #ffc1c1;
+}
+
+.beef {
+    background-color: #ff6262;
+    color: #fff;
+}
+
+.sushi {
+    background-color: #eee278;
+}
+
+/*-----------|Tablet|----------------*/
+@media screen and (min-width: 768px) {
+    section:nth-of-type(1) {
+        width: 49%;
+        float: left;
+    }
+
+    section:nth-of-type(2) {
+        width: 49%;
+        float: right;
+    }
+
+    section:nth-of-type(3) {
+        clear: both;
+    }
+}
+
+
+/*-----------|Desktop|----------------*/
+@media screen and (min-width: 992px) {
+        section:nth-of-type(1) {
+            width: 32%;
+            float: left;
+        }
+    
+        section:nth-of-type(2) {
+            width: 32%;
+            float: left;
+            margin: 0 1%;
+        }
+    
+        section:nth-of-type(3) {
+            width: 32%;
+            float: left;
+            clear: none;
+        }
+}
